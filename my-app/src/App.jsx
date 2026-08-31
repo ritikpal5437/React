@@ -135,15 +135,27 @@
 //   );
 // }
 // export default app;
-let name = "Ritik";
-let age = 21;
-function app(params) {
-  return(
-    <>          // =react ke JSX ke and js expresion chl rha h. isko freagment bolte h ele ko ek sath return kr skte h bina div lgaye
-      <h1>Hello {name} ! </h1>
-      <p>My Age is {age}</p>
-      <p>Next Year My Age will be {age+1}</p></>
+// let name = "Ritik";
+// let age = 21;
+// function app(params) {
+//   return(
+//     <>          // =react ke JSX ke and js expresion chl rha h. isko freagment bolte h ele ko ek sath return kr skte h bina div lgaye
+//       <h1>Hello {name} ! </h1>
+//       <p>My Age is {age}</p>
+//       <p>Next Year My Age will be {age+1}</p></>
   
+//   );
+// }
+// export default app;
+
+import Greeting from "./Greeting";
+
+function App() {
+  return (
+    <>
+    <h1>Hello Ritik !</h1>
+    <Greeting />  // greeting properly  import+render ho gyA
+</>
   );
 }
-export default app;
+export default App;  
