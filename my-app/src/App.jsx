@@ -128,10 +128,22 @@
 //   );
 // }
 // export default app;
+// function app(params) {
+//   let name="Ritik";
+//   return(
+//     <h1>Hello {name} !</h1>// {} ke andr hm js likh skte h
+//   );
+// }
+// export default app;
+let name = "Ritik";
+let age = 21;
 function app(params) {
-  let name="Ritik";
   return(
-    <h1>Hello {name} !</h1>// {} ke andr hm js likh skte h
+    <>          // =react ke JSX ke and js expresion chl rha h. isko freagment bolte h ele ko ek sath return kr skte h bina div lgaye
+      <h1>Hello {name} ! </h1>
+      <p>My Age is {age}</p>
+      <p>Next Year My Age will be {age+1}</p></>
+  
   );
 }
 export default app;
