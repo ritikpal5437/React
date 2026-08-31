@@ -122,9 +122,16 @@
 // export default App
 
 
+// function app(params) {
+//   return(
+//     <h1>hello react</h1>
+//   );
+// }
+// export default app;
 function app(params) {
+  let name="Ritik";
   return(
-    <h1>hello react</h1>
+    <h1>Hello {name} !</h1>// {} ke andr hm js likh skte h
   );
 }
 export default app;
