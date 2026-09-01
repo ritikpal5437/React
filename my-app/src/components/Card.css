@@ -1,6 +1,17 @@
-.card{
-    padding: 0;
-    margin: 20px;
-    border: 2px solid black;
-    background: linear-gradient(124deg ,red,green);
+.card {
+  width: 250px;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
 }
