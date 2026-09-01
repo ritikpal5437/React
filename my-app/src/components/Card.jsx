@@ -1,10 +1,10 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-
+import "./Card.css";
 const Card = props => {
   return (
     <div>
-       <h2>{props.name}</h2>
+       <p>{props.name}</p>
        <p>Age: {props.age}</p>
        <p>Course: {props.course}</p>
     </div>
