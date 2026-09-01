@@ -1,12 +1,12 @@
 // Create a React component called Navbar 
 
-import React from "react";
 
-const navbar=()=>{
+
+function Navbar(){
     return(
         <div>
             <nav>
-                <h1>My React App</h1>
+              
                 <ul>
                     <li>Home</li>
                     <li>About</li>
@@ -14,6 +14,6 @@ const navbar=()=>{
                 </ul>
             </nav>
         </div>
-    )
+    );
 }
-export navbar 
+export default Navbar;

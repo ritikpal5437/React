@@ -148,14 +148,25 @@
 // }
 // export default app;
 
-import Greeting from "./Greeting";
+// import Greeting from "./Greeting";
+
+// function App() {
+//   return (
+//     <>
+//     <h1>Hello Ritik !</h1>
+//     <Greeting />  
+//      {/* greeting properly  import+render ho gyA */}
+// </>
+//   );
+// }
+// export default App;  
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-    <h1>Hello Ritik !</h1>
-    <Greeting />  
-     {/* greeting properly  import+render ho gyA */}
+      <h1>My React App</h1>
+    <Navbar />  
 </>
   );
 }
