@@ -174,3 +174,11 @@ function App() {
   );
 }
 export default App;  
+// todays work 1 sept 2026
+// App.jsx
+//    ↓
+// Props
+//    ↓
+// Card.jsx
+//    ↓
+// // Card.css

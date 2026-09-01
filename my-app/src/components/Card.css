@@ -10,8 +10,10 @@
 
 .card h2 {
   margin-bottom: 10px;
+  color: black;
 }
 
 .card p {
   margin: 5px 0;
+  color: black;
 }
