@@ -170,6 +170,7 @@ function App() {
     <Navbar /> 
     <Card name = "Ritik" age={21} course="MCA" /> 
     <Card name = "Vicky" age={22} course="MCA" /> 
+    <Card name = "Ravit" age={23} course="MCA" /> 
 </>
   );
 }

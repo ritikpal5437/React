@@ -2,7 +2,8 @@
   width: 250px;
   padding: 20px;
   margin: 20px;
-  background-color: white;
+  background: linear-gradient(123deg, rgb(77, 175, 210),rgb(81, 80, 84));
+  background-color: rgb(180, 180, 205);
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
