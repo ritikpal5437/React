@@ -1,4 +1,3 @@
-import { useState } from 'react'
 // import heroImg from './assets/hero.png'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
@@ -160,8 +159,6 @@ import { useState } from 'react'
 //   );
 // }
 // export default App;  
-import Navbar from "./components/Navbar";
-import Card from "./components/Card";
 
 function App() {
   return (
