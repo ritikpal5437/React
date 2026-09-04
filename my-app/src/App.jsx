@@ -9,8 +9,15 @@ function App() {
   //   console.log("component rendered");
   // },[] );
   useEffect(() => {
-    console.log("Effect Started");
+    const interval=setInterval(()=>{
+    console.log('Timer Running');
+    
+    },1000
+  );
+    // console.log("Effect Started");
+
     return()=>{
+      clearInterval(interval)
       console.log('cleanup');
       
     };
