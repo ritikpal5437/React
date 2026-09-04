@@ -6,8 +6,8 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("count was changed");
-  }, [count]);
+    console.log("component rendered");
+  }, []);
 
   return (
     <>
