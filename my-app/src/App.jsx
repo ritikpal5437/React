@@ -5,9 +5,16 @@ import Card from "./components/Card";
 function App() {
   const [count, setCount] = useState(0);
 
+  // useEffect(() => {
+  //   console.log("component rendered");
+  // },[] );
   useEffect(() => {
-    console.log("component rendered");
-  }, []);
+    console.log("Effect Started");
+    return()=>{
+      console.log('cleanup');
+      
+    };
+  },[] );
 
   return (
     <>
