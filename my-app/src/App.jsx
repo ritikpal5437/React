@@ -1,29 +1,24 @@
-import { useEffect, useState ,useRef} from "react";
-import Navbar from "./components/Navbar";
-import Card from "./components/Card";
+// import {useRef} from 'react';
 
 
+// function app() {
+//   const countRef=useRef(0);
 
-// import { useRef } from "react";
+//   function handleClick() {
+//     countRef.current++;
+//     console.log(countRef.current);
+//   }
 
-function App() {
+//   return(
+//     <>
+//     <h1>useRef Practise</h1>
+//     <button onClick={handleClick}>click me</button>
+//     </>
+//   );
+// }
+// export default app;
 
-  const inputRef = useRef(null);
-
-  function focusInput() {
-    inputRef.current.focus();
+  function handleClick() {
+    countRef.current++;
+    console.log(countRef.current);
   }
-
-  return (
-    <>
-      <input ref={inputRef} />
-
-      <button onClick={focusInput}>
-        Focus Input
-      </button>
-    </>
-  );
-}
-
-export default App;
-
