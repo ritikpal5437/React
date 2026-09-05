@@ -17,8 +17,24 @@
 //   );
 // }
 // export default app;
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
 
   function handleClick() {
-    countRef.current++;
-    console.log(countRef.current);
+    setCount(count + 1);
   }
+
+  return (
+    <>
+      <h1>Count: {count}</h1>
+
+      <button onClick={handleClick}>
+        Click Me
+      </button>
+    </>
+  );
+}
+
+export default App;
