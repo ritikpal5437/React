@@ -1,40 +1,21 @@
-// import {useRef} from 'react';
-
-
-// function app() {
-//   const countRef=useRef(0);
-
-//   function handleClick() {
-//     countRef.current++;
-//     console.log(countRef.current);
-//   }
-
-//   return(
-//     <>
-//     <h1>useRef Practise</h1>
-//     <button onClick={handleClick}>click me</button>
-//     </>
-//   );
-// }
-// export default app;
 import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
-
-  return (
+  const[isloggedIn,setIsLoggedIn]=useState(false);
+  return(
     <>
-      <h1>Count: {count}</h1>
-
-      <button onClick={handleClick}>
-        Click Me
+    {
+      isloggedIn?(
+        <h1>Welcome Ritik</h1>
+      ) : (
+        <h1>Please Login</h1>
+      )
+    }
+    <button onClick={()=> setIsLoggedIn(!isloggedIn)}>
+      login / logout
       </button>
     </>
   );
+  
 }
-
 export default App;
