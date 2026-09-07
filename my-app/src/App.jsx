@@ -26,23 +26,43 @@
 // }
 
 // export default App;
-import Card from "./components2/card";
+// import Card from "./components2/card";
+// function App() {
+//   const students=[
+//     {name:"Ritik",age :21},
+//     {name:"Vicky",age :22},
+//     {name:"Ravit",age :23}
+//   ];
+//   return(
+//     <>
+//     {students.map((student,index)=>(
+//      <Card 
+//      key={index}
+//      name= {student.name}
+//      age={student.age} 
+//      />
+//     ))}
+//     </>
+//   );
+// }
+//  export default App;
+// API integratte
+
 function App() {
-  const students=[
-    {name:"Ritik",age :21},
-    {name:"Vicky",age :22},
-    {name:"Ravit",age :23}
-  ];
-  return(
+
+  function getData() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      });
+  }
+
+  return (
     <>
-    {students.map((student,index)=>(
-     <Card 
-     key={index}
-     name= {student.name}
-     age={student.age} 
-     />
-    ))}
+      <button onClick={getData}>Get Data</button>
     </>
   );
 }
- export default App;
+
+export default App;
