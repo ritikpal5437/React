@@ -26,7 +26,7 @@
 // }
 
 // export default App;
-
+import Card from "./components2/card";
 function App() {
   const students=[
     {name:"Ritik",age :21},
@@ -36,7 +36,11 @@ function App() {
   return(
     <>
     {students.map((student,index)=>(
-     <h2 key={index}>{student.name}-{student.age}</h2>
+     <Card 
+     key={index}
+     name= {student.name}
+     age={student.age} 
+     />
     ))}
     </>
   );
