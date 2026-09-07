@@ -1,15 +1,27 @@
 // 
-function App() {
+// function App() {
 
-  const names = ["Ritik", "Vicky", "Ravit"];
+//   const names = ["Ritik", "Vicky", "Ravit"];
 
-  return (
+//   return (
+//     <>
+//       {names.map((name) => (
+//         <h2>{name}</h2>
+//       ))}
+//     </>
+//   );
+// }
+
+// export default App;
+function App(params) {
+  const fruits = ["Apple" , "Banana" , "Mango","Orange" ];
+  return(
     <>
-      {names.map((name) => (
-        <h2>{name}</h2>
-      ))}
+    {fruits.map((fruits)=>(
+      <h2>{fruits}</h2>
+
+    ))}
     </>
   );
 }
-
 export default App;
