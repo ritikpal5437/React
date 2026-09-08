@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-
+import Card from "./components2/card";
 function App() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -21,7 +21,9 @@ function App() {
       ) : (
         users.map((user) => (
           <h2 key={user.id}>{user.name}</h2>
+          
         ))
+        
       )}
     </>
   );
