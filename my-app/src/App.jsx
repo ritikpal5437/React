@@ -48,21 +48,21 @@
 //  export default App;
 // API integratte
 
-function App() {
+// function App() {
 
-  function getData() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      });
-  }
+//   function getData() {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//       .then((response) => response.json())
+//       .then((data) => {
+//         console.log(data);
+//       });
+//   }
 
-  return (
-    <>
-      <button onClick={getData}>Get Data</button>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <button onClick={getData}>Get Data</button>
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;
