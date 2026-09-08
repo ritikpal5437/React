@@ -1,68 +1,30 @@
-// 
-// function App() {
 
-//   const names = ["Ritik", "Vicky", "Ravit"];
+import { useEffect, useState } from "react";
 
-//   return (
-//     <>
-//       {names.map((name) => (
-//         <h2>{name}</h2>
-//       ))}
-//     </>
-//   );
-// }
+function App() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-// export default App;
-// function App() {
-//   const fruits = ["Apple", "Banana", "Mango", "Orange"];
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => {
+        setUsers(data);
+        setLoading(false);
+      });
+  }, []);
 
-//   return (
-//     <>
-//       {fruits.map((fruit, index) => (
-//         <h2 key={index}>{fruit}</h2>
-//       ))}
-//     </>
-//   );
-// }
+  return (
+    <>
+      {loading ? (
+        <h2>Loading...</h2>
+      ) : (
+        users.map((user) => (
+          <h2 key={user.id}>{user.name}</h2>
+        ))
+      )}
+    </>
+  );
+}
 
-// export default App;
-// import Card from "./components2/card";
-// function App() {
-//   const students=[
-//     {name:"Ritik",age :21},
-//     {name:"Vicky",age :22},
-//     {name:"Ravit",age :23}
-//   ];
-//   return(
-//     <>
-//     {students.map((student,index)=>(
-//      <Card 
-//      key={index}
-//      name= {student.name}
-//      age={student.age} 
-//      />
-//     ))}
-//     </>
-//   );
-// }
-//  export default App;
-// API integratte
-
-// function App() {
-
-//   function getData() {
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//       .then((response) => response.json())
-//       .then((data) => {
-//         console.log(data);
-//       });
-//   }
-
-//   return (
-//     <>
-//       <button onClick={getData}>Get Data</button>
-//     </>
-//   );
-// }
-
-// export default App;
+export default App;
