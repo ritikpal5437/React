@@ -1,16 +1,16 @@
 import {
   createBrowserRouter,
-  RouterProvider,
-  Link
+  RouterProvider
 } from "react-router-dom";
+
+import Navbar from "./compRouter/Navbar";
+import User from "./compRouter/User";
 
 function Home() {
   return (
     <>
+      <Navbar />
       <h1>Home Page</h1>
-      <Link to="/about">About</Link>
-      <br />
-      <Link to="/contact">Contact</Link>
     </>
   );
 }
@@ -18,10 +18,8 @@ function Home() {
 function About() {
   return (
     <>
+      <Navbar />
       <h1>About Page</h1>
-      <Link to="/">Home</Link>
-      <br />
-      <Link to="/contact">Contact</Link>
     </>
   );
 }
@@ -29,10 +27,8 @@ function About() {
 function Contact() {
   return (
     <>
+      <Navbar />
       <h1>Contact Page</h1>
-      <Link to="/">Home</Link>
-      <br />
-      <Link to="/about">About</Link>
     </>
   );
 }
@@ -49,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />
+  },
+  {
+    path: "/user/:id",
+    element: <User />
   }
 ]);
 
