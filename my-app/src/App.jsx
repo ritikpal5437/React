@@ -1,24 +1,59 @@
-import { BrowserRouter, Routes, Route ,Link} from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Link
+} from "react-router-dom";
 
-import Home from "./Home";
-import About from "./About";
+function Home() {
+  return (
+    <>
+      <h1>Home Page</h1>
+      <Link to="/about">About</Link>
+      <br />
+      <Link to="/contact">Contact</Link>
+    </>
+  );
+}
+
+function About() {
+  return (
+    <>
+      <h1>About Page</h1>
+      <Link to="/">Home</Link>
+      <br />
+      <Link to="/contact">Contact</Link>
+    </>
+  );
+}
+
+function Contact() {
+  return (
+    <>
+      <h1>Contact Page</h1>
+      <Link to="/">Home</Link>
+      <br />
+      <Link to="/about">About</Link>
+    </>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/about",
+    element: <About />
+  },
+  {
+    path: "/contact",
+    element: <Contact />
+  }
+]);
 
 function App() {
-  return (
-    <BrowserRouter>
-          <nav>
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/about">About</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
