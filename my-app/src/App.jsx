@@ -2,8 +2,8 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import Navbar from "./compRouter/Navbar";
-import User from "./compRouter/User";
+// import Navbar from "./compRouter/Navbar";
+// import User from "./compRouter/User";
 
 function Home() {
   return (
