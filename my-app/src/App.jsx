@@ -1,28 +1,24 @@
-import { useMemo,useState } from "react";
+import { useCallback, useState } from "react";
+import Child from "./child";
+
 function App() {
-    const[count,setCount]=useState(0);
-    const[number,setNumber]=useState(1);
+  const [count, setCount] = useState(0);
 
-  
-      const square = useMemo(() => {
-    console.log("Calculation running...");
-    return number * number;
-  }, [number]);
+  const handleClick = useCallback(() => {
+    console.log("child Button clicked");
+  }, []);
 
-
-return(
+  return (
     <>
-    <h1>Count: {count}</h1>
-    <button onClick={()=>setCount(count+1)}>
-    Increase count
-    </button>
-       <h2>Number: {number}</h2>
-      <button onClick={() => setNumber(number + 1)}>
-        Increase Number
+      <h1>Count: {count}</h1>
+
+      <button onClick={() => setCount(count + 1)}>
+        Increase Count
       </button>
 
-    <h2>Square:{square}</h2>
+      <Child handleClick={handleClick} />
     </>
-);
+  );
 }
+
 export default App;
