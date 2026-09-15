@@ -47,12 +47,3 @@ Phase 4 — Routing
 24. Dynamic routes (/user/:id)
 25. useParams
 26. Navigation
-
-Phase 5 — Final Project
-27. Reusable components
-28. Context-based global state
-29. API integration
-30. Proper folder structure
-31. Responsive UI
-32. GitHub upload
-33. Final deployment
